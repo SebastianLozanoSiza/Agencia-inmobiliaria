@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.example.demo.dto.InmuebleDTO;
+import com.example.demo.dto.InmuebleDTOlistar;
 import com.example.demo.repositories.entitites.Inmueble;
 
 @Component
@@ -21,8 +22,8 @@ public class InmuebleDTOConverter {
         this.dbm = modelMapper;
     }
 
-    public InmuebleDTO convertToDTO(Inmueble inmueble) {
-        InmuebleDTO inmuebleDTO = dbm.map(inmueble, InmuebleDTO.class);
+    public InmuebleDTOlistar convertToDTO(Inmueble inmueble) {
+        InmuebleDTOlistar inmuebleDTO = dbm.map(inmueble, InmuebleDTOlistar.class);
         if (inmueble.getTipoInmueble() != null) {
             inmuebleDTO.setSuperficie(inmueble.getTipoInmueble().getSuperficie());
             inmuebleDTO.setDireccion(inmueble.getTipoInmueble().getDireccion());
@@ -40,7 +41,15 @@ public class InmuebleDTOConverter {
         return inmuebleDTO;
     }
 
-    public Inmueble convertToEntity(InmuebleDTO inmuebleDTO) {
+    public Inmueble convertToEntity(InmuebleDTOlistar inmuebleDTO) {
+        return dbm.map(inmuebleDTO, Inmueble.class);
+    }
+
+    public InmuebleDTO convertToDTOCreate(Inmueble inmueble) {
+        return dbm.map(inmueble, InmuebleDTO.class);
+    }
+
+    public Inmueble convertToEntityCreate(InmuebleDTO inmuebleDTO) {
         return dbm.map(inmuebleDTO, Inmueble.class);
     }
 }

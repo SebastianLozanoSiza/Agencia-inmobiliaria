@@ -7,14 +7,16 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class InmuebleDTO {
-
+public class InmuebleDTOlistar {
+    
     private Long id;
     private String numeroReferencia;
-    private Long idTipoInmueble;
-    private Long idEstadoInmueble;
+    private Float superficie; 
+    private String direccion;
+    private boolean enVenta;
+    private boolean enAlquiler;
     private Float precio;
-    private Long idPropietario;
+    private String nombrePropietario;
     private boolean llaves;
-    private Long idOficina;
+    private String nombreOficina;
 }

@@ -8,5 +8,7 @@ import com.example.demo.repositories.entitites.Inmueble;
 
 public interface RepositoryInmueble extends CrudRepository<Inmueble,Long>{
     
-    List<Inmueble> findByNumeroReferencia(String numero);
+    List<Inmueble> findByNumeroReferencia(String numeroReferencia);
+
+
 }
