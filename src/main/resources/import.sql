@@ -44,6 +44,14 @@ INSERT INTO `oficina` (`nombre`, `direccion`) VALUES ('Sucursal Sur', 'Carrera 2
 
 INSERT INTO `estado_inmueble` (`venta`, `alquiler`) VALUES (true, false);
 INSERT INTO `estado_inmueble` (`venta`, `alquiler`) VALUES (false, true);
+INSERT INTO `estado_inmueble` (`venta`, `alquiler`) VALUES (true, true);
+INSERT INTO `estado_inmueble` (`venta`, `alquiler`) VALUES (false, false);
+INSERT INTO `estado_inmueble` (`venta`, `alquiler`) VALUES (true, false);
+INSERT INTO `estado_inmueble` (`venta`, `alquiler`) VALUES (false, true);
+INSERT INTO `estado_inmueble` (`venta`, `alquiler`) VALUES (true, true);
+INSERT INTO `estado_inmueble` (`venta`, `alquiler`) VALUES (false, false);
+INSERT INTO `estado_inmueble` (`venta`, `alquiler`) VALUES (true, false);
+INSERT INTO `estado_inmueble` (`venta`, `alquiler`) VALUES (false, true);
 
 INSERT INTO `cliente` (`cedula`, `nombre`, `apellido`, `email`, `telefono`) VALUES (123456789, 'Gabriel', 'González', 'gabriel@example.com', '1122334455');
 INSERT INTO `cliente` (`cedula`, `nombre`, `apellido`, `email`, `telefono`) VALUES (987654321, 'Valeria', 'Vásquez', 'valeria@example.com', '9988776655');
@@ -110,12 +118,12 @@ INSERT INTO `tipo_inmueble` (`superficie`, `direccion`, `id_casa`, `id_villa`, `
 
 INSERT INTO `inmuebles` (`numero_referencia`, `id_tipo_inmueble`, `id_estado`, `precio`, `id_propietario`, `llaves`, `id_oficina`, `id_visitas`) VALUES ('REF-001', 1, 1, 150000.00, 1, 1, 1, 1);
 INSERT INTO `inmuebles` (`numero_referencia`, `id_tipo_inmueble`, `id_estado`, `precio`, `id_propietario`, `llaves`, `id_oficina`, `id_visitas`) VALUES ('REF-002', 2, 2, 800.00, 2, 1, 2, 2);
-INSERT INTO `inmuebles` (`numero_referencia`, `id_tipo_inmueble`, `id_estado`, `precio`, `id_propietario`, `llaves`, `id_oficina`, `id_visitas`) VALUES ('REF-003', 3, 1, 250000.00, 3, 1, 1, 3);
-INSERT INTO `inmuebles` (`numero_referencia`, `id_tipo_inmueble`, `id_estado`, `precio`, `id_propietario`, `llaves`, `id_oficina`, `id_visitas`) VALUES ('REF-004', 4, 2, 50000.00, 4, 1, 2, 4);
-INSERT INTO `inmuebles` (`numero_referencia`, `id_tipo_inmueble`, `id_estado`, `precio`, `id_propietario`, `llaves`, `id_oficina`, `id_visitas`) VALUES ('REF-005', 5, 1, 300000.00, 5, 1, 1, 5);
-INSERT INTO `inmuebles` (`numero_referencia`, `id_tipo_inmueble`, `id_estado`, `precio`, `id_propietario`, `llaves`, `id_oficina`, `id_visitas`) VALUES ('REF-006', 6, 2, 1200.00, 6, 1, 2, 6);
-INSERT INTO `inmuebles` (`numero_referencia`, `id_tipo_inmueble`, `id_estado`, `precio`, `id_propietario`, `llaves`, `id_oficina`, `id_visitas`) VALUES ('REF-007', 7, 1, 200000.00, 7, 1, 1, 7);
-INSERT INTO `inmuebles` (`numero_referencia`, `id_tipo_inmueble`, `id_estado`, `precio`, `id_propietario`, `llaves`, `id_oficina`, `id_visitas`) VALUES ('REF-008', 8, 2, 1000.00, 8, 1, 2, 8);
-INSERT INTO `inmuebles` (`numero_referencia`, `id_tipo_inmueble`, `id_estado`, `precio`, `id_propietario`, `llaves`, `id_oficina`, `id_visitas`) VALUES ('REF-009', 9, 1, 180000.00, 9, 1, 1, 9);
-INSERT INTO `inmuebles` (`numero_referencia`, `id_tipo_inmueble`, `id_estado`, `precio`, `id_propietario`, `llaves`, `id_oficina`, `id_visitas`) VALUES ('REF-010', 10, 2, 600.00, 10, 1, 2, 10);
+INSERT INTO `inmuebles` (`numero_referencia`, `id_tipo_inmueble`, `id_estado`, `precio`, `id_propietario`, `llaves`, `id_oficina`, `id_visitas`) VALUES ('REF-003', 3, 3, 250000.00, 3, 1, 1, 3);
+INSERT INTO `inmuebles` (`numero_referencia`, `id_tipo_inmueble`, `id_estado`, `precio`, `id_propietario`, `llaves`, `id_oficina`, `id_visitas`) VALUES ('REF-004', 4, 4, 50000.00, 4, 1, 2, 4);
+INSERT INTO `inmuebles` (`numero_referencia`, `id_tipo_inmueble`, `id_estado`, `precio`, `id_propietario`, `llaves`, `id_oficina`, `id_visitas`) VALUES ('REF-005', 5, 5, 300000.00, 5, 1, 1, 5);
+INSERT INTO `inmuebles` (`numero_referencia`, `id_tipo_inmueble`, `id_estado`, `precio`, `id_propietario`, `llaves`, `id_oficina`, `id_visitas`) VALUES ('REF-006', 6, 6, 1200.00, 6, 1, 2, 6);
+INSERT INTO `inmuebles` (`numero_referencia`, `id_tipo_inmueble`, `id_estado`, `precio`, `id_propietario`, `llaves`, `id_oficina`, `id_visitas`) VALUES ('REF-007', 7, 7, 200000.00, 7, 1, 1, 7);
+INSERT INTO `inmuebles` (`numero_referencia`, `id_tipo_inmueble`, `id_estado`, `precio`, `id_propietario`, `llaves`, `id_oficina`, `id_visitas`) VALUES ('REF-008', 8, 8, 1000.00, 8, 1, 2, 8);
+INSERT INTO `inmuebles` (`numero_referencia`, `id_tipo_inmueble`, `id_estado`, `precio`, `id_propietario`, `llaves`, `id_oficina`, `id_visitas`) VALUES ('REF-009', 9, 9, 180000.00, 9, 1, 1, 9);
+INSERT INTO `inmuebles` (`numero_referencia`, `id_tipo_inmueble`, `id_estado`, `precio`, `id_propietario`, `llaves`, `id_oficina`, `id_visitas`) VALUES ('REF-010', 10, 10, 600.00, 10, 1, 2, 10);
 
