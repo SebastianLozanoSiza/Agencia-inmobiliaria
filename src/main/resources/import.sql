@@ -1,7 +1,7 @@
-INSERT INTO users (email, pwd) VALUES ('account@debuggeandoieas.com', 'to_be_encoded');
-INSERT INTO users (email, pwd) VALUES ('cards@debuggeandoieas.com', 'to_be_encoded');
-INSERT INTO users (email, pwd) VALUES ('loans@debuggeandoieas.com', 'to_be_encoded');
-INSERT INTO users (email, pwd) VALUES ('balance@debuggeandoieas.com', 'to_be_encoded');
+INSERT INTO users (email, pwd) VALUES ('juan@gmamil.com', 'juan123');
+INSERT INTO users (email, pwd) VALUES ('pedro@gmail.com', 'pedro123');
+INSERT INTO users (email, pwd) VALUES ('luis@gmail.com', 'luis123');
+INSERT INTO users (email, pwd) VALUES ('andres@gmail.com', 'andres123');
 
 INSERT INTO roles (role_name, id_user) VALUES ('ROLE_ADMIN', 1);      
 INSERT INTO roles (role_name, id_user) VALUES ('ROLE_ADMIN', 2); 
